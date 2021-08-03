@@ -1,6 +1,8 @@
 # Tick Collector Plugin
 
-<h1>Usage:</h1>
+A dead simple tick aggregator plugin for UE4. As it is just made for simple usage it doesnt have blueprint support yet. Nothing special about this repo.
+
+<h2>Usage:</h2>
 
 - Disable tick in your actor
 - Inherit ITickCollectorInterface to your actor
