@@ -19,8 +19,8 @@ class YOURPOJECT_API AMyAwesomeClass : public AActor, public ITickCollectorInter
 - Add this to your beginplay:
 
 ```cpp
-UWorld* World = GetWorld();
-if(World)
+
+if(UWorld* World = GetWorld())
     {
         if(UTickCollectionWorldSubsystem* TickCollectionWorldSubsystem = World->GetSubsystem<UTickCollectionWorldSubsystem>())
         {
