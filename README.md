@@ -44,7 +44,7 @@ void AMyAwesomeClass::CollectionTick(float DeltaTime)
 }
  ```
  
-- When you need to stop ticking, set `bCanCollectionTick` to false. Its declared in ITickCollectionInterface so it is a global variable, you can use it on your ctor either.
+- When you need to stop ticking, set `bCanCollectionTick` to false. Its declared in `ITickCollectionInterface` so it is a global variable, you can use it on your ctor either.
 
 - If your class destroyed or somehow went invalid in the world in the tick loop subsystem already checks if its `IsValid()` or not, so it will be automatically removed from collection array in similar cases. 
 
