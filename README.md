@@ -38,5 +38,9 @@ void AMyAwesomeClass::CollectionTick(float DeltaTime)
     // your awesome logic here.
 }
  ```
+ 
+- When you need to stop ticking, set `bCanCollectionTick` to false. Its declared in ITickCollectionInterface so it is a global variable, you can use it on your ctor either.
+
+- If your class destroyed or somehow went invalid in the world in the tick loop subsystem already checks if its `IsValid()` or not, so it will be automatically removed from collection array in similar cases. 
 
 - Finally, have fun of instant micro optimisation because your call time of Tick() function is reduced slightly, with more actors it will be more visible on framerate, with fewer actors it doesnt even worth it. What this function does is adds your class to an array and loops them on *single* tick. That way your *call time* of Tick() function reduces. Tadaa!!..
