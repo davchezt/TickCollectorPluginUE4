@@ -13,7 +13,7 @@ void UTickCollectionWorldSubsystem::Tick(float DeltaTime)
 	}
 	
 	const int32 Count = GetCollectionCount();
-	for(int16 i = 0; i <= Count; ++i)
+	for(int16 i = 0; i < Count; ++i)
 	{
 		UObject* Object = ObjectCollection[i];
 		if(IsValid(Object))
