@@ -48,4 +48,4 @@ void AMyAwesomeClass::CollectionTick(float DeltaTime)
 
 - If your class destroyed or somehow went invalid in the world in the tick loop subsystem already checks if its `IsValid()` or not, so it will be automatically removed from collection array in similar cases. 
 
-- Finally, have fun of instant micro optimisation because your call time of Tick() function is reduced slightly, with more actors it will be more visible on framerate, **with fewer actors it doesnt even worth the effort to implement**. What this function does is adds your class to an array and loops them on *single* tick. That way your *call time* of Tick() function reduces. 
+- Finally, have fun of instant micro optimisation because your call time of Tick() function is reduced slightly, with more actors it will be more visible on framerate, **with fewer actors it doesnt even worth the effort to implement**. What this plugin does is adds your class to an array and loops them on *single* tick. That way your *call time* of Tick() function reduces. 
