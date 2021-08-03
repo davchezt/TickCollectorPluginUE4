@@ -5,6 +5,11 @@ A dead simple tick aggregator plugin for UE4. As it is just made for simple usag
 <h2>Usage:</h2>
 
 - Disable tick in your actor
+
+```cpp
+PrimaryActorTick.bCanEverTick = false; // go to hell with your bloated tick FTickableGameObject..
+```
+
 - Inherit ITickCollectorInterface to your actor
 
 ```cpp
@@ -28,7 +33,7 @@ if(World)
 
 ```cpp
 // .h
-virtual void CollectionTick(float DeltaTime);
+virtual void CollectionTick(float DeltaTime) override;
 
 // .cpp
 void AMyAwesomeClass::CollectionTick(float DeltaTime)
