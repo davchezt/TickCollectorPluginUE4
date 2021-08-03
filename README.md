@@ -24,7 +24,7 @@ if(World)
     }
  ```
 
-Step 4- override CollectionTick() and implement your tick logic there, if you want you can call Super::Tick()
+- Override CollectionTick() and implement your tick logic there, if you want you can call Super::Tick()
 
 ```cpp
 // .h
@@ -39,4 +39,4 @@ void AMyAwesomeClass::CollectionTick(float DeltaTime)
 }
  ```
 
-step 5- Have fun of instant micro optimisation because your call time of Tick() function is reduced slightly, with more actors it will be more visible on framerate, with fewer actors it doesnt even worth it. What this function does is adds your class to an array and loops them on *single* tick. That way your *call time* of Tick() function reduces. Tadaa!!..
+- Finally, have fun of instant micro optimisation because your call time of Tick() function is reduced slightly, with more actors it will be more visible on framerate, with fewer actors it doesnt even worth it. What this function does is adds your class to an array and loops them on *single* tick. That way your *call time* of Tick() function reduces. Tadaa!!..
