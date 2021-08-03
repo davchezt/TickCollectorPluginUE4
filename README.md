@@ -1,6 +1,6 @@
 # Tick Collector Plugin
 
-A dead simple tick aggregator plugin for UE4. As it is just made for simple usage it doesnt have blueprint support yet. Nothing special about this repo.
+A dead simple tick collector plugin for UE4. As it is just made for simple usage it doesnt have blueprint support yet. Nothing special about this repo. The main purpose here is to demonstrate the idea of tick collection.
 
 <h2>Usage:</h2>
 
