@@ -16,7 +16,7 @@ PrimaryActorTick.bCanEverTick = false; // go to hell with your bloated tick FTic
 class YOURPOJECT_API AMyAwesomeClass : public AActor, public ITickCollectorInterface
 ```
 
-- Add this to your beginplay:
+- Add this to your beginplay: (note: you can directly call AddObjectToCollection() too, which is declared in interface)
 
 ```cpp
 
